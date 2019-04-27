@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --entry ./src/index.js --output ./dist/bundle.js",
+    "start": "webpack-dev-server --open",
     "test": "webpack --help",
-    "build": "webpack-cli --mode production --entry ./src/index.js --output ./dist/bundle.js"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
