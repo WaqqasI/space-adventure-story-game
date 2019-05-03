@@ -1,7 +1,6 @@
-import getTexture from './getTexture.js'
-import app from './index.js'
+import getTexture from "./getTexture.js";
 import * as PIXI from "pixi.js";
-const draw = () => {
+const draw = (app) => {
   const spaceshipTex = getTexture("spaceship");
   // This creates a texture from a 'bunny.png' image
   const spaceship = new PIXI.Sprite(spaceshipTex);
