@@ -1,9 +1,9 @@
 import * as PIXI from "pixi.js";
 import preloadResources from "./preloadResources.js";
 import getTexture from "./getTexture.js";
-import ghostURL from "./images/ghost.png";
+import ghostURL from "./images/spaceship.png";
 
-const app = new PIXI.Application();
+const app = new PIXI.Application({width: 1000, height: 1000});
 document.body.appendChild(app.view);
 
 function running() {
