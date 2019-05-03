@@ -11,13 +11,14 @@ document.body.appendChild(app.view);
 
 const draw = () => {
   const spaceshipTex = getTexture("spaceship");
+  console.log(spaceshipTex)
   // This creates a texture from a 'bunny.png' image
   const spaceship = new PIXI.Sprite(spaceshipTex);
-
+  console.log(spaceship)
   // Setup the position of the bunny
   spaceship.x = app.renderer.width / 2;
   spaceship.y = app.renderer.height / 2;
-
+  console.log(spaceshipURL)
   // Rotate around the center
   spaceship.anchor.x = 0.5;
   spaceship.anchor.y = 0.5;
@@ -44,6 +45,6 @@ window.addEventListener("load", () => {
 
   // Then load the images
   preloadResources(resources, () => {
-    draw(app);
+    draw();
   });
 });
