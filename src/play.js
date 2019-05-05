@@ -1,11 +1,14 @@
-import * as PIXI from 'pixi.js';
-import getTexture from './getTexture.js';
+import playDrawLoop from "./playDrawLoop";
 
-const draw = (app) => {
-  
-  const spaceshipTex = getTexture("spaceship");
+/**
+ *  The loop for playing
+ * @param app app object from pixi
+ * @param {Object} sprites object with sprites
+ */
+
+const play = (app, sprites) => {
   // This creates a texture from a 'bunny.png' image
-  const spaceship = new PIXI.Sprite(spaceshipTex);
+  const spaceship = sprites["spaceship"];
 
   // Setup the position of the bunny
   spaceship.x = app.renderer.width / 2;
@@ -15,15 +18,14 @@ const draw = (app) => {
   spaceship.anchor.x = 0.5;
   spaceship.anchor.y = 0.5;
 
+  spaceship.scale.set(0.5, 0.5);
   // Add the bunny to the scene we are building
   app.stage.addChild(spaceship);
 
   // Listen for frame updates
-  app.ticker.add(() => {
-    // each frame we spin the bunny around a bit
-    spaceship.rotation += 0.01;
+  app.ticker.add(delta => {
+    playDrawLoop({ spaceship: spaceship }, delta, app);
   });
-  
-}
+};
 
-export default draw
+export default play;
