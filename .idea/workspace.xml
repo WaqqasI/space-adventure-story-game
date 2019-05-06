@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/playDrawLoop.js" line="6" />
+    <bookmark url="file://$PROJECT_DIR$/src/play.js" line="6" />
+    <bookmark url="file://$PROJECT_DIR$/src/index.js" line="10" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/playDrawLoop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+    <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="Restructured everything with classes">
+      <change afterPath="$PROJECT_DIR$/src/stateManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/play.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/play.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/play.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playDrawLoop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,6 +38,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="LightningsFury &lt;light@memeware.net&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -47,9 +52,11 @@
         <option value="$PROJECT_DIR$/src/draw.js" />
         <option value="$PROJECT_DIR$/src/setup.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/play.js" />
         <option value="$PROJECT_DIR$/src/playDrawLoop.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/stateManager.js" />
+        <option value="$PROJECT_DIR$/src/play.js" />
       </list>
     </option>
   </component>
@@ -76,6 +83,11 @@
             <path>
               <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
               <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -85,12 +97,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Git/cmd/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Waqqas\Documents\Coding\pixi.js\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,12 +166,19 @@
       <workItem from="1556999392836" duration="1124000" />
       <workItem from="1557066565313" duration="120000" />
       <workItem from="1557066797839" duration="231000" />
-      <workItem from="1557067218451" duration="5318000" />
+      <workItem from="1557067218451" duration="5612000" />
+      <workItem from="1557150554702" duration="740000" />
+      <workItem from="1557154289823" duration="153000" />
+      <workItem from="1557154581996" duration="211000" />
+      <workItem from="1557155018653" duration="331000" />
+      <workItem from="1557155535368" duration="478000" />
+      <workItem from="1557156246177" duration="715000" />
+      <workItem from="1557157229646" duration="6373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15359000" />
+    <option name="totallyTimeSpent" value="24654000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -172,25 +192,25 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5780023" weight="0.19722815" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5759599" visible="true" weight="0.2096" />
       <window_info id="Structure" order="1" sideWeight="0.30864197" side_tool="true" weight="0.088" />
       <window_info id="npm" order="2" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
+      <window_info id="Favorites" order="3" sideWeight="0.42404008" side_tool="true" visible="true" weight="0.2096" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32868758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32934132" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884398" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32868758" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.24354658" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.24354658" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32772166" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.24242425" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.24354658" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="1292" y="464" width="617" height="486" id="Key Promoter X" order="3" type="FLOATING" weight="0.32906666" />
-      <window_info anchor="right" id="Favorites" order="4" sideWeight="0.42199776" weight="0.19083156" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,34 +284,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/setup.js">
+    <entry file="file://$PROJECT_DIR$/src/playDrawLoop.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/play.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="230">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/playDrawLoop.js">
+    <entry file="file://$PROJECT_DIR$/src/stateManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="554">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/play.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
