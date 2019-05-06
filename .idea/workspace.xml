@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="Restructured everything with classes">
-      <change afterPath="$PROJECT_DIR$/src/stateManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/play.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/play.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playDrawLoop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setup.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -173,12 +168,20 @@
       <workItem from="1557155018653" duration="331000" />
       <workItem from="1557155535368" duration="478000" />
       <workItem from="1557156246177" duration="715000" />
-      <workItem from="1557157229646" duration="6373000" />
+      <workItem from="1557157229646" duration="6612000" />
     </task>
+    <task id="LOCAL-00001" summary="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state.">
+      <created>1557164385777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557164385778</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24654000" />
+    <option name="totallyTimeSpent" value="24893000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -255,6 +258,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state." />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
