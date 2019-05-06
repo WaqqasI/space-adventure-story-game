@@ -1,31 +1,66 @@
-import playDrawLoop from "./playDrawLoop";
+import getTexture from "./getTexture";
+import * as PIXI from "pixi.js";
 
 /**
- *  The loop for playing
- * @param app app object from pixi
- * @param {Object} sprites object with sprites
+ * Starts the play state, constructor sets up all the sprites.
  */
+class Play {
+  /**
+   * Adds all the this object variables and creates the spaceship sprite.
+   * @param {Object} app
+   */
+  constructor(app) {
+    this.app = app;
+    this.sprites = {};
+    const spaceshipTex = getTexture("spaceship");
+    this.sprites["spaceship"] = new PIXI.Sprite(spaceshipTex);
+    this.previousDelta = 0;
+    this.vx = -1;
+    this.terminated = false;
+  }
 
-const play = (app, sprites) => {
-  // This creates a texture from a 'bunny.png' image
-  const spaceship = sprites["spaceship"];
+  /**
+   * Puts the sprites in the stage after giving them a location, size and scale.
+   */
+  setup() {
+    const spaceship = this.sprites["spaceship"];
+    const app = this.app;
+    spaceship.x = app.renderer.width / 2;
+    spaceship.y = app.renderer.height / 2;
 
-  // Setup the position of the bunny
-  spaceship.x = app.renderer.width / 2;
-  spaceship.y = app.renderer.height / 2;
+    spaceship.anchor.x = 0.5;
+    spaceship.anchor.y = 0.5;
 
-  // Rotate around the center
-  spaceship.anchor.x = 0.5;
-  spaceship.anchor.y = 0.5;
+    spaceship.scale.set(0.5, 0.5);
 
-  spaceship.scale.set(0.5, 0.5);
-  // Add the bunny to the scene we are building
-  app.stage.addChild(spaceship);
+    app.stage.addChild(spaceship);
+    console.log("added to stage");
+  }
 
-  // Listen for frame updates
-  app.ticker.add(delta => {
-    playDrawLoop({ spaceship: spaceship }, delta, app);
-  });
-};
+  /**
+   * Recursive function as a loop which moves the spaceship.
+   * @param {Number} [delta] Seconds since the loop started, originally stays as undefined but given a value by requestAnimationFrame
+   */
+  loop(delta) {
+    const spaceship = this.sprites["spaceship"];
+    const app = this.app;
+    this.previousDelta = delta ? delta : 1;
+    const newDelta = delta - this.previousDelta;
 
-export default play;
+    if (spaceship.x + spaceship.width / 2 >= app.renderer.width) {
+      this.vx = -1;
+    }
+    if (spaceship.x - spaceship.width / 2 <= 0) {
+      this.vx = 1;
+    }
+    spaceship.x += this.vx * (newDelta ? newDelta : 1);
+    if (!this.terminated) requestAnimationFrame(this.loop.bind(this));
+  }
+  terminate() {
+    this.terminated = true;
+    this.sprites["spaceship"].visible = false;
+    // TODO: Loop through sprites object to do this
+  }
+}
+
+export default Play;
