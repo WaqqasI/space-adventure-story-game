@@ -10,7 +10,7 @@ const setup = application => {
   app = application;
   state = new Play(app);
   state.setup();
-  state.loop();
+  state.loop(1);
 };
 
 /**

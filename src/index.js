@@ -1,9 +1,10 @@
 import * as PIXI from "pixi.js";
-import preloadResources from "./preloadResources.js";
+import preloadResources from "./Util/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
-import stateManager from "./stateManager.js";
+import planetsBgURL from "./images/planets.png";
+import stateManager from "./gameState/stateManager.js";
 
-const app = new PIXI.Application({ width: 1000, height: 500 });
+const app = new PIXI.Application({ width: 960, height: 540 });
 document.body.appendChild(app.view);
 
 window.addEventListener("load", () => {
@@ -12,6 +13,10 @@ window.addEventListener("load", () => {
     {
       name: "spaceship",
       url: spaceshipURL
+    },
+    {
+      name: "planets",
+      url: planetsBgURL
     }
   ];
 
