@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     render() {
-        return <Interface onclick={this.startPlaying}/>;
+        return <Interface onclick={this.startPlaying.bind(this)}/>;
     }
 }
 
