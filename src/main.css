@@ -1,0 +1,17 @@
+.container {
+    position: relative;
+}
+
+.container .elements {
+    position: absolute;
+}
+
+.container .canvas {
+    position: absolute;
+}
+
+.centered {
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}

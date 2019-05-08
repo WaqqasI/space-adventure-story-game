@@ -1,6 +1,7 @@
 import Play from "./play.js";
+import SetUserName from './setUserName.js'
 
-let state,app;
+let state, app;
 
 /**
  *
@@ -8,24 +9,24 @@ let state,app;
  */
 const setup = application => {
   app = application;
-  state = new Play(app);
+    state = new SetUserName(app);
   state.setup();
-  state.loop(1);
+    SetUserName.loop(1);
 };
 
 /**
  * Changes the current game state
  * @param {Number} stateNo 1 is Play state
  */
-const changeState = (stateNo) => {
-  state.terminate()
+const changeState = stateNo => {
+    let cache = state.terminate();
   if (stateNo === 1) {
-    state = new Play(app);
+      state = new Play(app, cache);
     state.setup();
-    state.loop();
+      state.loop(1);
   }
   // TODO: More states
-}
+};
 
 const stateManager = { setup: setup, changeState: changeState };
 

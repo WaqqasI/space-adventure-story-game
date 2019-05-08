@@ -3,9 +3,13 @@ import preloadResources from "./Util/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
 import planetsBgURL from "./images/planets.png";
 import stateManager from "./gameState/stateManager.js";
+import App from "./Interface/App.js";
+import * as ReactDOM from "react-dom";
+import React from 'react'
 
+const canvasElement = document.getElementById("canvas");
 const app = new PIXI.Application({ width: 960, height: 540 });
-document.body.appendChild(app.view);
+canvasElement.appendChild(app.view);
 
 window.addEventListener("load", () => {
   // List of resources to load
@@ -24,4 +28,9 @@ window.addEventListener("load", () => {
   preloadResources(resources, () => {
     stateManager.setup(app);
   });
+
+    ReactDOM.render(<App/>, document.getElementById('root'))
+
 });
+
+

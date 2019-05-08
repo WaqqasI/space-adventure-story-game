@@ -9,8 +9,9 @@ class Play {
   /**
    * Adds all the this object variables and creates the spaceship sprite.
    * @param {Object} app
+   * @param {Object} cache
    */
-  constructor(app) {
+  constructor(app, cache) {
     this.app = app;
     this.sprites = {};
     const spaceshipTex = getTexture("spaceship");
@@ -21,8 +22,6 @@ class Play {
     this.vx = 0;
     this.vy = 0;
     this.terminated = false;
-    this.afterEffectX = 0;
-    this.afterEffectY = 0;
     this.keyboard = {
       left: new Keyboard(
         "ArrowLeft",
@@ -45,6 +44,7 @@ class Play {
         this.downRelease.bind(this)
       )
     };
+      this.cache = cache;
   }
 
   /**
@@ -131,6 +131,8 @@ class Play {
     }
   }
 
+    // TODO : redo this really, it's messy
+
   leftPress() {
     this.vx = -0.2;
   }
@@ -165,6 +167,11 @@ class Play {
     for (let i in sprites) {
       sprites[i].visible = false;
     }
+      this.keyboard.left.unsubscribe();
+      this.keyboard.right.unsubscribe();
+      this.keyboard.up.unsubscribe();
+      this.keyboard.down.unsubscribe();
+      return this.cache;
   }
 }
 
