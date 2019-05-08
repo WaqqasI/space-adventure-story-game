@@ -9,6 +9,7 @@ class App extends Component {
 
     startPlaying() {
         stateManager.changeState(1);
+        console.log('ran')
     }
 
     render() {

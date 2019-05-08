@@ -10,7 +10,7 @@ class SetName extends Component {
     render() {
         return (
             <div className="centered">
-                <button onclick={this.props.onclick}>Start</button>
+                <button onClick={this.props.onclick}>Start</button>
             </div>
         );
     }
