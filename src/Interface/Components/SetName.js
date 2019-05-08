@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import "./main.css";
+import "../../main.css";
 
 class SetName extends Component {
     constructor(props) {
