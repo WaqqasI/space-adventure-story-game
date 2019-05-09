@@ -13,6 +13,6 @@ class App extends Component {
     }
 }
 
-console.log(Interface.control())
+//console.log(Interface.control())
 
 export default App;
