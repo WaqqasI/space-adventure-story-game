@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-.container {
-    position: relative;
-}
-
-.container .elements {
-    position: absolute;
-}
-
-.container .canvas {
-    position: absolute;
-}
-
-.centered {
-    top: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-=======
 .container {
     position: relative;
 }
@@ -32,9 +14,42 @@
 
 .centered {
     position: absolute;
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
->>>>>>> d8c1d634ea673605b7310d1d9c34bb14b03ca86a
+    transform: translate(
+            -50%,
+            -50%
+    ); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+    padding: 10px;
+    border: aqua 2px solid;
+    border-radius: 25px;
+    align-items: center;
+}
+
+.usernameform {
+    align-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+input.submitButton {
+    color: black;
+    align-self: center;
+    border: cadetblue 1px dashed;
+    fill: grey;
+    padding: 3px;
+    align-items: center;
+    width: auto;
+    margin: 2px;
+}
+
+form input {
+    margin: 1px;
+}
+
+.usernameform label {
+    padding: 1px;
+    color: white;
 }

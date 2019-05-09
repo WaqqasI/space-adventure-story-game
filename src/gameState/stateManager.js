@@ -1,5 +1,5 @@
-import Play from "./play.js";
-import SetUserName from './setUserName.js'
+import PlayState from "./PlayState.js";
+import SettingUserName from './SettingUserName.js'
 
 let state, app;
 
@@ -9,19 +9,20 @@ let state, app;
  */
 const setup = application => {
   app = application;
-    state = new SetUserName(app);
+    state = new SettingUserName(app);
   state.setup();
-    SetUserName.loop(1);
+    SettingUserName.loop(1);
 };
 
 /**
  * Changes the current game state
- * @param {Number} stateNo 1 is Play state
+ * @param {Number} stateNo 1 is PlayState state
+ * @param {Object} extraCache more cache values
  */
-const changeState = stateNo => {
-    let cache = state.terminate();
+const changeState = (stateNo, extraCache) => {
+    let cache = Object.assign(state.terminate(), extraCache)
   if (stateNo === 1) {
-      state = new Play(app, cache);
+      state = new PlayState(app, cache);
     state.setup();
       state.loop(1);
   }

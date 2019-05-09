@@ -1,11 +1,13 @@
 import getTexture from "../Util/getTexture";
 import Keyboard from "../Util/Keyboard";
 import * as PIXI from "pixi.js";
+import wallDetection from '../Util/wallDetection'
+import createSpaceship from '../Util/createSpaceship'
 
 /**
  * Starts the play state, constructor sets up all the sprites.
  */
-class Play {
+class PlayState {
   /**
    * Adds all the this object variables and creates the spaceship sprite.
    * @param {Object} app
@@ -16,7 +18,7 @@ class Play {
     this.sprites = {};
     const spaceshipTex = getTexture("spaceship");
     const planetsTex = getTexture("planets");
-    this.sprites["spaceship"] = new PIXI.Sprite(spaceshipTex);
+    this.sprites["spaceship"] = createSpaceship(cache.username);
     this.sprites["planets"] = new PIXI.Sprite(planetsTex);
     this.previousDelta = 0;
     this.vx = 0;
@@ -44,7 +46,8 @@ class Play {
         this.downRelease.bind(this)
       )
     };
-      this.cache = cache;
+    this.cache = cache || {};
+    console.log(cache.username);
   }
 
   /**
@@ -56,10 +59,6 @@ class Play {
     spaceship.x = app.renderer.width / 2;
     spaceship.y = app.renderer.height / 2;
 
-    spaceship.anchor.x = 0.5;
-    spaceship.anchor.y = 0.5;
-
-    spaceship.scale.set(0.2, 0.2);
 
     this.sprites["planets"].scale.set(0.5, 0.5);
 
@@ -92,7 +91,7 @@ class Play {
 
     spaceship.x += this.vx * newDelta;
     spaceship.y += this.vy * newDelta;
-    Play.wallDetection(
+    wallDetection(
       spaceship.x,
       spaceship.y,
       spaceship.width,
@@ -103,33 +102,7 @@ class Play {
     );
   }
 
-  /**
-   * Detects if sprite is hitting walls.
-   * @param {number} x Sprite x coordinate
-   * @param {number} y sprite y coordinate
-   * @param {number} width sprite width
-   * @param {number} height sprite height
-   * @param {number} appWidth renderer width
-   * @param {number} appHeight renderer height
-   * @param {object} sprite
-   */
-  static wallDetection(x, y, width, height, appWidth, appHeight, sprite) {
-    // Side Walls
-    if (x + width / 2 >= appWidth) {
-      sprite.x = appWidth - width / 2;
-    }
-    if (x - width / 2 <= 0) {
-      sprite.x = width / 2;
-    }
 
-    // up and down walls
-    if (y + height / 2 >= appHeight) {
-      sprite.y = appHeight - height / 2;
-    }
-    if (y - height / 2 <= 0) {
-      sprite.y = height / 2;
-    }
-  }
 
     // TODO : redo this really, it's messy
 
@@ -175,4 +148,4 @@ class Play {
   }
 }
 
-export default Play;
+export default PlayState;

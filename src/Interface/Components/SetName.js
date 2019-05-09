@@ -4,14 +4,22 @@ import "../../main.css";
 class SetName extends Component {
     constructor(props) {
         super(props);
-      console.log(this.props.onclick);
-      this.display = this.props.visible ? 'block' : 'none';
     }
 
     render() {
         return (
-            <div className="centered">
-                <button onClick={this.props.onclick} style={{display: this.display}}>Start</button>
+            <div className="centered" style={{display: this.props.visible ? 'block' : 'none'}}>
+                <h1>Set Your Username </h1>
+                <form onSubmit={this.props.onSubmit} className={'usernameform'}>
+                    <label>
+                        Name:
+                        <input type={'text'} name={'username'} onChange={this.props.onChange}/>
+                    </label>
+                    <br/>
+                    <div style={{textAlign: "center"}}>
+                        <input type={'submit'} className={'submitButton'}/>
+                    </div>
+                </form>
             </div>
         );
     }
