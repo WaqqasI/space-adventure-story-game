@@ -7,13 +7,9 @@ class App extends Component {
         super(props);
     }
 
-    startPlaying() {
-        stateManager.changeState(1);
-        console.log('ran')
-    }
 
     render() {
-        return <Interface onclick={this.startPlaying.bind(this)}/>;
+        return <Interface />;
     }
 }
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import SetName from './Components/SetName.js'
+import stateManager from "../gameState/stateManager";
 
 class Interface extends Component {
     constructor(props) {
