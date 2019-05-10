@@ -1,8 +1,9 @@
 import getTexture from "../Util/getTexture";
 import Keyboard from "../Util/Keyboard";
 import * as PIXI from "pixi.js";
-import wallDetection from '../Util/wallDetection'
-import createSpaceship from '../Util/createSpaceship'
+import wallDetection from "../Util/wallDetection";
+import createSpaceship from "../Util/createSpaceship";
+import stateManager from "./stateManager";
 
 /**
  * Starts the play state, constructor sets up all the sprites.
@@ -16,10 +17,17 @@ class PlayState {
   constructor(app, cache) {
     this.app = app;
     this.sprites = {};
-    const spaceshipTex = getTexture("spaceship");
-    const planetsTex = getTexture("planets");
-    this.sprites["spaceship"] = createSpaceship(cache.username);
-    this.sprites["planets"] = new PIXI.Sprite(planetsTex);
+    if (!cache.sprites) {
+      const spaceshipTex = getTexture("spaceship");
+      const planetsTex = getTexture("planets");
+      this.sprites["spaceship"] = createSpaceship(cache.username);
+      this.sprites["planets"] = new PIXI.Sprite(planetsTex);
+    } else {
+      this.sprites["spaceship"] = cache.sprites["spaceship"];
+      this.sprites["planets"] = cache.sprites["planets"];
+      this.sprites["spaceship"].visible = true;
+      this.sprites["planets"].visible = true;
+    }
     this.previousDelta = 0;
     this.vx = 0;
     this.vy = 0;
@@ -59,7 +67,6 @@ class PlayState {
     spaceship.x = app.renderer.width / 2;
     spaceship.y = app.renderer.height / 2;
 
-
     this.sprites["planets"].scale.set(0.5, 0.5);
 
     app.stage.addChild(this.sprites["planets"]);
@@ -88,9 +95,9 @@ class PlayState {
     const newDelta = delta - (this.previousDelta ? this.previousDelta : 0);
     this.previousDelta = delta;
     if (newDelta > 1000) return;
-
     spaceship.x += this.vx * newDelta;
     spaceship.y += this.vy * newDelta;
+    console.log(spaceship.x, spaceship.y);
     wallDetection(
       spaceship.x,
       spaceship.y,
@@ -100,11 +107,15 @@ class PlayState {
       app.renderer.height,
       spaceship
     );
+    if (
+        spaceship.y <= 210 &&
+        spaceship.y >= 200 &&
+        (spaceship.x <= 470 && spaceship.x >= 450)
+    )
+      stateManager.changeState(2);
   }
 
-
-
-    // TODO : redo this really, it's messy
+  // TODO : redo this really, it's messy
 
   leftPress() {
     this.vx = -0.2;
@@ -140,11 +151,12 @@ class PlayState {
     for (let i in sprites) {
       sprites[i].visible = false;
     }
-      this.keyboard.left.unsubscribe();
-      this.keyboard.right.unsubscribe();
-      this.keyboard.up.unsubscribe();
-      this.keyboard.down.unsubscribe();
-      return this.cache;
+    this.keyboard.left.unsubscribe();
+    this.keyboard.right.unsubscribe();
+    this.keyboard.up.unsubscribe();
+    this.keyboard.down.unsubscribe();
+    this.cache.sprites = this.sprites;
+    return this.cache;
   }
 }
 

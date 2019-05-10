@@ -12,11 +12,11 @@ const createSpaceship = name => {
     const spaceship = new PIXI.Sprite(spaceshipTex);
     const textStyle = new PIXI.TextStyle({
         fill: "white",
-        fontSize: 15,
+        fontSize: 30,
         wordWrap: true,
         wordWrapWidth: 100,
         align: "center",
-        fontFamily: 'VT323'
+        fontFamily: "VT323"
     });
     const usernameSprite = new PIXI.Text(name, textStyle);
 
@@ -27,7 +27,7 @@ const createSpaceship = name => {
     container.addChild(spaceship);
 
     usernameSprite.y = spaceship.height / 2;
-    usernameSprite.x = 0 - (spaceship.width / 2);
+    usernameSprite.x = 0 - spaceship.width / 2;
 
     container.addChild(spaceship);
     container.addChild(usernameSprite);

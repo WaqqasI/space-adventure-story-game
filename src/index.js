@@ -2,8 +2,8 @@ import * as PIXI from "pixi.js";
 import preloadResources from "./Util/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
 import planetsBgURL from "./images/planets.png";
+import textBoxURL from "./images/textbox.png";
 import stateManager from "./gameState/stateManager.js";
-
 
 const canvasElement = document.getElementById("canvas");
 const app = new PIXI.Application({ width: 960, height: 540 });
@@ -19,6 +19,10 @@ window.addEventListener("load", () => {
     {
       name: "planets",
       url: planetsBgURL
+    },
+    {
+      name: "text-box",
+      url: textBoxURL
     }
   ];
 
@@ -26,8 +30,4 @@ window.addEventListener("load", () => {
   preloadResources(resources, () => {
     stateManager.setup(app);
   });
-
-
 });
-
-

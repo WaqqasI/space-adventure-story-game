@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Interface from "./Interface";
+import Interface from "./SettingAUsername";
 
 const InterfaceView = Interface.view
 class App extends Component {

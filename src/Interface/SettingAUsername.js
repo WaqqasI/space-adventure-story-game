@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import SetName from "./Components/SetName.js";
+import SetNameForm from "./Components/SetNameForm.js";
 import stateManager from "../gameState/stateManager";
 
 
-class Interface extends Component {
+class SettingAUsername extends Component {
     constructor(props) {
         super(props);
         this.state = {visible: true, value: '',};
@@ -22,10 +22,10 @@ class Interface extends Component {
 
     render() {
         return (
-            <SetName visible={this.state.visible} onSubmit={this.submitName.bind(this)}
-                     onChange={this.nameValueChanged.bind(this)}/>
+            <SetNameForm visible={this.state.visible} onSubmit={this.submitName.bind(this)}
+                         onChange={this.nameValueChanged.bind(this)}/>
         );
     }
 }
 
-export default {view: Interface};
+export default {view: SettingAUsername};
