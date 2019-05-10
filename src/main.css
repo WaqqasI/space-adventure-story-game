@@ -37,12 +37,15 @@ h1 {
 input.submitButton {
     color: black;
     align-self: center;
-    border: cadetblue 1px dashed;
+    border: none;
     fill: grey;
-    padding: 3px;
+    padding: 5px;
+  height: 10px;
+  
     align-items: center;
     width: auto;
     margin: 2px;
+  margin-top: 2px;
 }
 
 form input {
@@ -52,4 +55,8 @@ form input {
 .usernameform label {
     padding: 1px;
     color: white;
+}
+
+label input {
+padding: 1px;
 }
