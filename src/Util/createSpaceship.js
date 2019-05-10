@@ -15,7 +15,8 @@ const createSpaceship = name => {
         fontSize: 15,
         wordWrap: true,
         wordWrapWidth: 100,
-        align: "center"
+        align: "center",
+        fontFamily: 'VT323'
     });
     const usernameSprite = new PIXI.Text(name, textStyle);
 
