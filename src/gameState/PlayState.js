@@ -4,6 +4,7 @@ import * as PIXI from "pixi.js";
 import wallDetection from "../Util/wallDetection";
 import createSpaceship from "../Util/createSpaceship";
 import stateManager from "./stateManager";
+import hitTestRectangle from "../Util/collisionDetection";
 
 /**
  * Starts the play state, constructor sets up all the sprites.
@@ -64,13 +65,21 @@ class PlayState {
   setup() {
     const spaceship = this.sprites["spaceship"];
     const app = this.app;
-    spaceship.x = app.renderer.width / 2;
+      spaceship.x = app.renderer.width / 1.7;
     spaceship.y = app.renderer.height / 2;
 
     this.sprites["planets"].scale.set(0.5, 0.5);
 
     app.stage.addChild(this.sprites["planets"]);
     app.stage.addChild(spaceship);
+
+      /*    let rectangle = new PIXI.Graphics();
+      rectangle.drawRect(0, 0, 64, 64);
+      rectangle.x = 436;
+      rectangle.y = 169;
+
+      this.rectangle = rectangle;
+      app.stage.addChild(rectangle);*/
 
     this.keyboard.left.subscribe();
     this.keyboard.right.subscribe();
@@ -97,6 +106,8 @@ class PlayState {
     if (newDelta > 1000) return;
     spaceship.x += this.vx * newDelta;
     spaceship.y += this.vy * newDelta;
+
+      // 446 179
     console.log(spaceship.x, spaceship.y);
     wallDetection(
       spaceship.x,
@@ -107,11 +118,7 @@ class PlayState {
       app.renderer.height,
       spaceship
     );
-    if (
-        spaceship.y <= 210 &&
-        spaceship.y >= 200 &&
-        (spaceship.x <= 470 && spaceship.x >= 450)
-    )
+      if (hitTestRectangle(spaceship, {x: 476, y: 169, width: 64, height: 64}))
       stateManager.changeState(2);
   }
 

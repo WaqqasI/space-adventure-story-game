@@ -9,7 +9,7 @@ module.exports = {
   },
   devServer: {
     contentBase: "./dist",
-    port: 7080
+    port: 8080
   },
   devtool: "inline-source-map",
   module: {

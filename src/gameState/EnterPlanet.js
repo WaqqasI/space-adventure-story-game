@@ -1,4 +1,7 @@
 import stateManager from "./stateManager";
+import getTexture from "../Util/getTexture";
+import {Sprite} from "pixi.js";
+import {valuesFromCallBack} from "../Util/setComponentState";
 
 class EnterPlanet {
     constructor(app, cache) {
@@ -10,10 +13,21 @@ class EnterPlanet {
             console.log(sprite);
             sprite.visible = true;
         }
+        const textBoxTex = getTexture("text-box");
+        this.textBox = new Sprite(textBoxTex);
     }
 
     setup() {
-        return undefined;
+        const textBox = this.textBox;
+        textBox.x = 185;
+        textBox.y = this.app.renderer.height - 30 - textBox.height;
+        textBox.scale.set(1.05);
+        this.app.stage.addChild(textBox);
+        valuesFromCallBack((state, props) => {
+            return {
+                visible: true
+            };
+        });
     }
 
     loop(delta) {
@@ -27,6 +41,13 @@ class EnterPlanet {
             sprite.visible = false;
         }
         clearInterval(this.interval);
+        this.cache.textBox = this.textBox;
+        this.textBox.visible = false;
+        valuesFromCallBack((state, props) => {
+            return {
+                visible: false
+            };
+        });
         return this.cache;
     }
 }
