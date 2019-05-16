@@ -30,7 +30,7 @@
 }
 
 * {
-  font-family: "VT323";
+  font-family: "VT323", sans-serif;
 }
 
 .container {
@@ -48,6 +48,7 @@
 }
 
 .centered {
+  z-index: 1;
   position: absolute;
   top: 50%; /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
@@ -112,7 +113,7 @@ label {
   text-emphasis: grey;
 }
 
-.testThing {
+.textBox {
   position: absolute;
   width: 550px;
   height: 180px;
@@ -123,4 +124,24 @@ label {
 
 .information p {
   word-wrap: break-word;
+  text-align: center;
+  font-size: 17px;
+}
+
+.optionButton {
+  width: 40%;
+  margin-bottom: 3px;
+  height: 40px;
+  border: 2px solid black;
+  background-color: aquamarine;
+  padding: 1px;
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.center {
+  align-items: center;
+  align-content: center;
+  alignment: center;
+  text-align: center;
 }

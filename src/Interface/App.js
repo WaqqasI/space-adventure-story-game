@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import Interface from "./Interfaces/SettingAUsername";
-import TextBoxOptions from "./Interfaces/TextBoxOptions";
+import React, { Component } from "react";
+import Interface from "./Interfaces/Username/SettingAUsername";
+import TextBoxMenu from "./Interfaces/TextBox/TextBoxMenu";
 
 const InterfaceView = Interface.view;
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         return (
             <div>
                 <InterfaceView/>
-                <TextBoxOptions/>
+              <TextBoxMenu/>
             </div>
         );
     }

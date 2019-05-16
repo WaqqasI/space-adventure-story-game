@@ -1,6 +1,6 @@
-import React, {Component} from "react";
-import SetNameForm from "../Components/SetNameForm.js";
-import stateManager from "../../gameState/stateManager";
+import React, { Component } from "react";
+import SetNameForm from "../../Components/SetNameForm.js";
+import stateManager from "../../../gameState/stateManager";
 
 
 class SettingAUsername extends Component {
