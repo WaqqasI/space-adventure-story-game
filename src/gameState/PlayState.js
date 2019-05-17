@@ -107,8 +107,6 @@ class PlayState {
     spaceship.x += this.vx * newDelta;
     spaceship.y += this.vy * newDelta;
 
-      // 446 179
-    console.log(spaceship.x, spaceship.y);
     wallDetection(
       spaceship.x,
       spaceship.y,

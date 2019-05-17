@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/gameState/play.js" line="6" />
-    <bookmark url="file://$PROJECT_DIR$/src/index.js" line="14" />
+    <bookmark url="file://$PROJECT_DIR$/src/gameState/PlayState.js" line="9" />
+    <bookmark url="file://$PROJECT_DIR$/src/index.js" line="11" />
+    <bookmark url="file://$PROJECT_DIR$/src/Interface/Components/TextBox.js" line="5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Waqqas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Components/TextBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Components/TextBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Components/TextBoxDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Components/TextBoxDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Components/TextBoxOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Components/TextBoxOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/Interfaces/TextBox/TextBoxMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/Interfaces/TextBox/TextBoxMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameState/EnterPlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/EnterPlanet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameState/PlayState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/PlayState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,15 +32,30 @@
     <favorites_list name="pixi.js" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Interface/Interface.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2403">
+              <caret line="125" column="24" lean-forward="true" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBoxDescription.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -42,10 +65,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>wall</find>
+      <find>PlayState</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -67,18 +96,37 @@
         <option value="$PROJECT_DIR$/src/play.js" />
         <option value="$PROJECT_DIR$/src/Util/Keyboard.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/src/gameState/stateManager.js" />
         <option value="$PROJECT_DIR$/src/Interface/App.jsx" />
         <option value="$PROJECT_DIR$/src/Interface/Inteface.js" />
-        <option value="$PROJECT_DIR$/src/gameState/setUserName.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Interface/Interface.js" />
-        <option value="$PROJECT_DIR$/src/Interface/App.js" />
         <option value="$PROJECT_DIR$/src/gameState/play.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/main.css" />
-        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/gameState/setUserName.js" />
+        <option value="$PROJECT_DIR$/src/Util/wallDetection.js" />
         <option value="$PROJECT_DIR$/src/Interface/Components/SetName.js" />
+        <option value="$PROJECT_DIR$/src/gameState/SettingUserName.js" />
+        <option value="$PROJECT_DIR$/src/Util/createSpaceship.js" />
+        <option value="$PROJECT_DIR$/src/gameState/enterPlanet.js" />
+        <option value="$PROJECT_DIR$/src/gameState/stateManager.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/Interface/TextBoxOptions.js" />
+        <option value="$PROJECT_DIR$/src/Util/collisionDetection.js" />
+        <option value="$PROJECT_DIR$/src/Interface/App.js" />
+        <option value="$PROJECT_DIR$/src/Util/setComponentState.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Interfaces/TextBoxOptions.js" />
+        <option value="$PROJECT_DIR$/src/Util/Bases/SetStateBase.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Interfaces/TextBox/enabler.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Interfaces/TextBox/TextBoxOptions.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Components/TextAndOptions.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Components/TextBoxButton.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/Interface/Components/TextBoxOptions.js" />
+        <option value="$PROJECT_DIR$/src/gameState/PlayState.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Components/TextBox.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Interfaces/TextBox/TextBoxMenu.js" />
+        <option value="$PROJECT_DIR$/src/gameState/EnterPlanet.js" />
+        <option value="$PROJECT_DIR$/src/Interface/Components/TextBoxDescription.js" />
+        <option value="$PROJECT_DIR$/src/main.css" />
       </list>
     </option>
   </component>
@@ -88,47 +136,14 @@
     <option name="width" value="1094" />
     <option name="height" value="994" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gameState" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Interface" type="462c0819:PsiDirectoryNode" />
-              <item name="Components" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -169,13 +184,84 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gameState" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="TextBox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="Username" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pixi.js" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pixi.js" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+              <item name="Bases" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Waqqas\Documents\Coding\pixi.js\node_modules\prettier" />
@@ -183,8 +269,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\Util\Bases" />
+      <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\Interface\Interfaces\TextBox" />
+      <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\Interface\Interfaces\Username" />
+      <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\Interface\Interfaces" />
       <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\gameState" />
-      <recent name="C:\Users\Waqqas\Documents\Coding\pixi.js\src\Util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,7 +288,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.prestart">
+  <component name="RunManager" selected="Node.js.wallDetection.js">
+    <configuration name="wallDetection.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="wallDetection.js" working-dir="$PROJECT_DIR$/src/Util">
+      <method v="2" />
+    </configuration>
     <configuration name="prestart" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -222,6 +314,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.wallDetection.js" />
         <item itemvalue="npm.prestart" />
         <item itemvalue="npm.test" />
       </list>
@@ -259,7 +352,15 @@
       <workItem from="1557240327299" duration="10453000" />
       <workItem from="1557330730388" duration="4638000" />
       <workItem from="1557337849566" duration="4294000" />
-      <workItem from="1557411752241" duration="580000" />
+      <workItem from="1557411752241" duration="8940000" />
+      <workItem from="1557504742721" duration="6902000" />
+      <workItem from="1557586136945" duration="7269000" />
+      <workItem from="1557674426154" duration="346000" />
+      <workItem from="1557857830967" duration="1768000" />
+      <workItem from="1557930865038" duration="5016000" />
+      <workItem from="1558021273121" duration="6489000" />
+      <workItem from="1558030125733" duration="4453000" />
+      <workItem from="1558106784778" duration="4061000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state.">
       <created>1557164385777</created>
@@ -282,11 +383,39 @@
       <option name="project" value="LOCAL" />
       <updated>1557349644958</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Username picker at the start with react and new images added and username added under spaceship">
+      <created>1557424357431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557424357432</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Made username picker look cooler and borderline setup for entering planet">
+      <created>1557511935317</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557511935317</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Collision detection for planet, text box and basic interface with lorem ipsum">
+      <created>1557595523193</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557595523193</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Promise based communication between interface and text box menu. renamed stuff, added buttons to be added soon">
+      <created>1558048347796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558048347796</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44858000" />
+    <option name="totallyTimeSpent" value="89522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,28 +428,48 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5759599" visible="true" weight="0.216" />
-      <window_info id="Structure" order="1" sideWeight="0.30864197" side_tool="true" weight="0.088" />
-      <window_info id="npm" order="2" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
-      <window_info id="Favorites" order="3" sideWeight="0.42404008" side_tool="true" weight="0.2096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64983165" visible="true" weight="0.23454158" />
+      <window_info id="npm" order="1" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
+      <window_info id="Favorites" order="2" sideWeight="0.35016835" side_tool="true" weight="0.22068231" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32868758" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32772166" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955106" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884398" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32772166" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.24242425" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.17171717" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="1292" y="464" width="617" height="486" id="Key Promoter X" order="3" type="FLOATING" weight="0.32906666" />
+      <window_info anchor="right" id="Structure" order="4" sideWeight="0.3509485" weight="0.22068231" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64983165" visible="true" weight="0.22921109" />
+      <window_info id="npm" order="1" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
+      <window_info id="Favorites" order="2" sideWeight="0.35016835" side_tool="true" weight="0.22068231" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32996634" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32772166" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884398" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32772166" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.24242425" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.24354658" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.17171717" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="1292" y="464" width="617" height="486" id="Key Promoter X" order="3" type="FLOATING" weight="0.32906666" />
-    </layout>
+      <window_info anchor="right" id="Structure" order="4" sideWeight="0.3509485" weight="0.22068231" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -369,7 +518,11 @@
     <MESSAGE value="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state." />
     <MESSAGE value="Keyboard movement and files used" />
     <MESSAGE value="React support and button to start doesn't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="React support and button to start doesn't work" />
+    <MESSAGE value="Username picker at the start with react and new images added and username added under spaceship" />
+    <MESSAGE value="Made username picker look cooler and borderline setup for entering planet" />
+    <MESSAGE value="Collision detection for planet, text box and basic interface with lorem ipsum" />
+    <MESSAGE value="Promise based communication between interface and text box menu. renamed stuff, added buttons to be added soon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Promise based communication between interface and text box menu. renamed stuff, added buttons to be added soon" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -394,21 +547,7 @@
     <entry file="file://$PROJECT_DIR$/src/Util/preloadResources.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/playDrawLoop.js" />
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -422,9 +561,6 @@
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/planets.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Util/Keyboard.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -447,10 +583,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameState/setUserName.js">
+    <entry file="file://$PROJECT_DIR$/src/Util/wallDetection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="67" />
+        <state relative-caret-position="667">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/planets.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameState/SettingUserName.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/createSpaceship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -459,79 +615,163 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gameState/stateManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="711">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gameState/play.js">
+    <entry file="file://$PROJECT_DIR$/src/images/textbox.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="170" column="32" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
+        <state relative-caret-position="575">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="638" column="4" selection-start-line="638" selection-start-column="4" selection-end-line="638" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/collisionDetection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Components/SetNameForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Interfaces/Username/SettingAUsername.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Interfaces/TextBox/enabler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/Bases/SetStateBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBoxButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBoxOptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gameState/PlayState.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/Interface/Interfaces/TextBox/TextBoxMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="485">
+          <caret line="23" column="55" lean-forward="true" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/src/gameState/EnterPlanet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="552">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/Components/TextBoxDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/Components/SetName.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/Interface.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2403">
+          <caret line="125" column="24" lean-forward="true" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
         </state>
       </provider>
     </entry>

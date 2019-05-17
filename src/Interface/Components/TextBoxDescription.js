@@ -5,9 +5,7 @@ class TextBoxDescription extends Component {
     return (
       <div className={"information"}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis, delectus? Assumenda dolorum
-          ipsa mollitia, officiis ratione temporibus! Accusantium blanditiis consequatur dolore dolores
-          laborum omnis, voluptatem? Ab ea minus velit!
+          {this.props.content}
         </p>
       </div>
     );

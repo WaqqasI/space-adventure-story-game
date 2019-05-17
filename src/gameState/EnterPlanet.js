@@ -14,6 +14,20 @@ class EnterPlanet {
     }
     const textBoxTex = getTexture("text-box");
     this.textBox = new Sprite(textBoxTex);
+    this.options = [
+      {
+        value: "OK",
+        onClick: (menu) => {
+          menu.terminate();
+        }
+      },
+      {
+        value: "CANCEL",
+        onClick: (menu) => {
+          menu.terminate();
+        }
+      }
+    ];
   }
 
   setup() {
@@ -23,7 +37,11 @@ class EnterPlanet {
     textBox.scale.set(1.05);
     this.app.stage.addChild(textBox);
     enabler.resolve((state, props) => {
-      return { visible: true };
+      return {
+        visible: true,
+        options: this.options,
+        description: "Do you want to enter the ghost planet? Work in progress so nothing will work exclamation mark"
+      };
     });
   }
 

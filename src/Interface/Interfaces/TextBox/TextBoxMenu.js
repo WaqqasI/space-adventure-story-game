@@ -17,22 +17,20 @@ class TextBoxMenu extends Component {
   listener() {
     enabler.listenForResolve().then(values => {
       this.setState(values);
-      setTimeout(() => {
-        console.log("setting state");
-        this.setState({
-          visible: false
-        });
-        console.log("set sate and now changing");
-        stateManager.changeState(1);
-        this.listener();
-      }, 10000);
     });
+  }
+
+  terminate() {
+    this.setState({ visible: false, options: undefined });
+    stateManager.changeState(1);
+    this.listener();
   }
 
   render() {
     return (
       <div className={"textBox"}>
-        <TextBox visible={this.state.visible}/>
+        <TextBox visible={this.state.visible} options={this.state.options || []}
+                 clickFunctions={{ terminate: this.terminate.bind(this) }} description={this.state.description}/>
       </div>
     );
   }
