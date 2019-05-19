@@ -1,6 +1,7 @@
 import PlayState from "./PlayState.js";
 import SettingUserName from "./SettingUserName.js";
 import EnterPlanet from "./EnterPlanet";
+import GhostPlanet from "./GhostPlanet";
 
 let state, app;
 
@@ -30,6 +31,10 @@ const changeState = (stateNo, extraCache) => {
       state = new EnterPlanet(app, cache);
       state.setup();
       state.loop(1);
+  } else if (stateNo === 3) {
+    state = new GhostPlanet(app, cache);
+    state.setup();
+    state.loop(1);
   }
   // TODO: More states
 };

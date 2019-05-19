@@ -33,9 +33,23 @@
   font-family: "VT323", sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
 .container {
   position: relative;
 }
+
 
 .container .elements {
   position: absolute;

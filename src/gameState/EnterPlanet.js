@@ -6,10 +6,9 @@ class EnterPlanet {
   constructor(app, cache) {
     this.app = app;
     this.cache = cache;
-    const sprites = Object.values(cache.sprites);
+    const sprites = Object.values(this.cache.sprites);
     for (const i in sprites) {
       const sprite = sprites[i];
-      console.log(sprite);
       sprite.visible = true;
     }
     const textBoxTex = getTexture("text-box");
@@ -18,7 +17,7 @@ class EnterPlanet {
       {
         value: "OK",
         onClick: (menu) => {
-          menu.terminate();
+          menu.continue();
         }
       },
       {
@@ -53,8 +52,10 @@ class EnterPlanet {
     for (const i in sprites) {
       const sprite = sprites[i];
       sprite.visible = false;
+      console.log(sprite);
     }
-    clearInterval(this.interval);
+    for (const i in this.app.stage.children) this.app.stage.children.visible = false;
+    console.log(this.cache.sprites["planets"].visible);
     this.cache.textBox = this.textBox;
     this.textBox.visible = false;
     return this.cache;

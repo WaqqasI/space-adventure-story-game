@@ -26,11 +26,23 @@ class TextBoxMenu extends Component {
     this.listener();
   }
 
+  continue() {
+    stateManager.changeState(3);
+    this.listener();
+  }
+
   render() {
     return (
       <div className={"textBox"}>
-        <TextBox visible={this.state.visible} options={this.state.options || []}
-                 clickFunctions={{ terminate: this.terminate.bind(this) }} description={this.state.description}/>
+        <TextBox
+          visible={this.state.visible}
+          options={this.state.options || []}
+          clickFunctions={{
+            terminate: this.terminate.bind(this),
+            continue: this.continue.bind(this)
+          }}
+          description={this.state.description}
+        />
       </div>
     );
   }

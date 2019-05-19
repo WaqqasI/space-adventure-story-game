@@ -3,6 +3,8 @@ import preloadResources from "./Util/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
 import planetsBgURL from "./images/planets.png";
 import textBoxURL from "./images/textbox.png";
+import ghostPlanetURL from "./images/ghostPlanet.png";
+import ghostURL from "./images/ghost.png";
 import stateManager from "./gameState/stateManager.js";
 
 const canvasElement = document.getElementById("canvas");
@@ -23,6 +25,14 @@ window.addEventListener("load", () => {
     {
       name: "text-box",
       url: textBoxURL
+    },
+    {
+      name: "ghost-planet",
+      url: ghostPlanetURL
+    },
+    {
+      name: "ghost",
+      url: ghostURL
     }
   ];
 
