@@ -1,0 +1,41 @@
+{
+  "value": "Hello",
+  "options": [
+    {
+      "value": "heyyo",
+      "options": [
+        {
+          "value": "wrong!",
+          "jump": true
+        }
+      ]
+    },
+    {
+      "value": "hi",
+      "options": [
+        {
+          "value": "wrong",
+          "jump": true
+        }
+      ]
+    },
+    {
+      "value": "henlo",
+      "options": [
+        {
+          "value": "right!",
+          "finished": true
+        }
+      ]
+    },
+    {
+      "value": "good morn",
+      "options": [
+        {
+          "value": "wrong",
+          "jump": true
+        }
+      ]
+    }
+  ]
+}

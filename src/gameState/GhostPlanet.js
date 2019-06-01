@@ -65,6 +65,7 @@ class GhostPlanet {
     this.app.stage.removeChild(this.cache.EnterPlanet.textBox);
     this.bgExists || this.app.stage.addChild(this.bg);
     this.app.stage.addChild(this.cache.EnterPlanet.textBox);
+    this.bg.visible = true;
     console.log(this.ghosts);
     for (const i in this.ghosts) {
       if (!this.cache.ghosts) {
