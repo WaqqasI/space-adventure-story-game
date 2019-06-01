@@ -4,11 +4,12 @@
 class Keyboard {
   /**
    * Creates all the values
-   * @param {String} value Code value for the keypress like ArrowLeft or ArrowRight
+   * @param {String[]} value Code value for the keypress like ArrowLeft or ArrowRight
    * @param {function} press The function that fires whenever the button is pressed down
    * @param {function} release function whe button is released
    */
   constructor(value, press, release) {
+    if (typeof value !== "object") value = [value];
     this.value = value;
     this.isDown = false;
     this.isUp = true;
@@ -23,7 +24,7 @@ class Keyboard {
    * @param e event
    */
   downHandler(e) {
-    if (e.key !== this.value) return;
+    if (!this.value.includes(e.key)) return;
     if (this.isUp && this.press) {
       console.log("down");
       this.press();
@@ -38,7 +39,7 @@ class Keyboard {
    * @param e
    */
   upHandler(e) {
-    if (e.key !== this.value) return;
+    if (!this.value.includes(e.key)) return;
     if (this.isDown && this.release) {
       console.log("up");
       this.release();

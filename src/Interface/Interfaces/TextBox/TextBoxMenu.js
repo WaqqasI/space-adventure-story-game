@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "../../../main.css";
 import enabler from "./enabler";
 import TextBox from "../../Components/TextBox";
-import stateManager from "../../../gameState/stateManager";
 
 class TextBoxMenu extends Component {
   constructor(props) {
@@ -15,21 +14,11 @@ class TextBoxMenu extends Component {
   }
 
   listener() {
-    enabler.listenForResolve().then(values => {
+    enabler.listenForResolve(this.listener.bind(this)).then(values => {
       this.setState(values);
     });
   }
 
-  terminate() {
-    this.setState({ visible: false, options: undefined });
-    stateManager.changeState(1);
-    this.listener();
-  }
-
-  continue() {
-    stateManager.changeState(3);
-    this.listener();
-  }
 
   render() {
     return (
@@ -37,10 +26,6 @@ class TextBoxMenu extends Component {
         <TextBox
           visible={this.state.visible}
           options={this.state.options || []}
-          clickFunctions={{
-            terminate: this.terminate.bind(this),
-            continue: this.continue.bind(this)
-          }}
           description={this.state.description}
         />
       </div>

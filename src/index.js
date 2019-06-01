@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import preloadResources from "./Util/preloadResources.js";
+import preloadResources from "./Util/Graphics/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
 import planetsBgURL from "./images/planets.png";
 import textBoxURL from "./images/textbox.png";

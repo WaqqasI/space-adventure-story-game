@@ -9,7 +9,8 @@ class TextBoxEnabler extends SetState {
    * Creates a promise that can be returned with .then
    * @returns {Promise<any>}
    */
-  listenForResolve() {
+  listenForResolve(recursive) {
+    this.recursive = recursive;
     return this.createPromise();
   }
 
@@ -19,6 +20,7 @@ class TextBoxEnabler extends SetState {
    */
   resolve(state) {
     this.resolver(state);
+    this.recursive();
   }
 
   /**

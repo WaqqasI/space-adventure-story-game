@@ -9,7 +9,7 @@ module.exports = {
   },
   devServer: {
 
-    port: process.env.PORT || 8989
+    port: process.env.PORT || 8889
   },
   devtool: "inline-source-map",
   module: {

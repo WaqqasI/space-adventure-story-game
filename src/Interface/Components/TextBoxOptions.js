@@ -16,7 +16,7 @@ class TextBoxOptions extends Component {
       const letter = this.optionLetters[i];
       const element = (
         <TextBoxButton content={letter + this.props.buttons[i].value}
-                       onClick={() => this.props.buttons[i].onClick(this.props.clickFunctions)} key={letter}/>
+                       onClick={() => this.props.buttons[i].onClick()} key={letter}/>
       );
       buttons.push(element);
     }

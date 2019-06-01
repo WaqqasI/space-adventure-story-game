@@ -10,7 +10,6 @@ class TextBox extends Component {
         <TextBoxDescription content={this.props.description}/>
         <TextBoxOptions
           buttons={this.props.options}
-          clickFunctions={this.props.clickFunctions}
         />
       </div>
     );

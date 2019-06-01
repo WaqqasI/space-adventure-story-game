@@ -1,12 +1,13 @@
-import getTexture from "../Util/getTexture";
+import getTexture from "../Util/Graphics/getTexture";
 import { Sprite } from "pixi.js";
 import enabler from "../Interface/Interfaces/TextBox/enabler";
+import stateManager from "./stateManager";
 
 class EnterPlanet {
   constructor(app, cache) {
     this.app = app;
     this.cache = cache;
-    const sprites = Object.values(this.cache.sprites);
+    const sprites = Object.values(this.cache.PlayState.sprites);
     for (const i in sprites) {
       const sprite = sprites[i];
       sprite.visible = true;
@@ -16,14 +17,14 @@ class EnterPlanet {
     this.options = [
       {
         value: "OK",
-        onClick: (menu) => {
-          menu.continue();
+        onClick: () => {
+          stateManager.changeState(3);
         }
       },
       {
         value: "CANCEL",
-        onClick: (menu) => {
-          menu.terminate();
+        onClick: () => {
+          stateManager.changeState(1);
         }
       }
     ];
@@ -39,7 +40,8 @@ class EnterPlanet {
       return {
         visible: true,
         options: this.options,
-        description: "Do you want to enter the ghost planet? Work in progress so nothing will work exclamation mark"
+        description:
+          "Do you want to enter the ghost planet? Work in progress so nothing will work exclamation mark"
       };
     });
   }
@@ -48,15 +50,22 @@ class EnterPlanet {
   }
 
   terminate() {
-    const sprites = Object.values(this.cache.sprites);
+    enabler.resolve(() => {
+      return { visible: false };
+    });
+
+    const sprites = Object.values(this.cache.PlayState.sprites);
     for (const i in sprites) {
       const sprite = sprites[i];
       sprite.visible = false;
       console.log(sprite);
     }
-    for (const i in this.app.stage.children) this.app.stage.children.visible = false;
-    console.log(this.cache.sprites["planets"].visible);
-    this.cache.textBox = this.textBox;
+
+    for (const i in this.app.stage.children) {
+      this.app.stage.children[i].visible = false;
+    }
+
+    this.cache.EnterPlanet = { textBox: this.textBox };
     this.textBox.visible = false;
     return this.cache;
   }
