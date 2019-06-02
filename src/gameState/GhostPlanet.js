@@ -12,7 +12,9 @@ class GhostPlanet {
     this.cache.EnterPlanet.textBox.visible = true;
     this.bgExists = this.cache.GhostPlanet ? this.cache.GhostPlanet.bg : false;
     this.bg = this.bgExists || new PIXI.Sprite(getTexture("ghost-planet"));
-    this.ghosts = this.cache.GhostPlanet ? this.cache.GhostPlanet.ghosts : undefined;
+    this.ghosts = this.cache.GhostPlanet
+      ? this.cache.GhostPlanet.ghosts
+      : undefined;
     if (!this.ghosts) {
       this.createGhosts();
     } else this.visualiseGhosts();

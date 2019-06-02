@@ -24,11 +24,7 @@ class ArrowKeyMovement {
         b(this.rightPress),
         b(this.rightRelease)
       ),
-      up: new Keyboard(
-        ["ArrowUp", "W"],
-        b(this.upPress),
-        b(this.upRelease)
-      ),
+      up: new Keyboard(["ArrowUp", "W"], b(this.upPress), b(this.upRelease)),
       down: new Keyboard(
         ["ArrowDown", "S"],
         b(this.downPress),

@@ -22,7 +22,9 @@ class PlayState {
     if (!cachedSprites) {
       const spaceshipTex = getTexture("spaceship");
       const planetsTex = getTexture("planets");
-      this.sprites["spaceship"] = createSpaceship(cache.SettingUserName.username);
+      this.sprites["spaceship"] = createSpaceship(
+        cache.SettingUserName.username
+      );
       this.sprites["planets"] = new PIXI.Sprite(planetsTex);
     } else {
       this.sprites["spaceship"] = cachedSprites["spaceship"];
@@ -82,13 +84,10 @@ class PlayState {
     spaceship.x += this.velocityManager.vx * newDelta;
     spaceship.y += this.velocityManager.vy * newDelta;
 
-    wallDetection(
-      ...getArguments()
-    );
+    wallDetection(...getArguments());
     if (hitTestRectangle(spaceship, { x: 476, y: 169, width: 64, height: 64 }))
       stateManager.changeState(2);
   }
-
 
   loopThroughKeyboard(execution) {
     for (const value of Object.keys(this.keyboard)) {

@@ -8,7 +8,6 @@ module.exports = {
     filename: "bundle.js"
   },
   devServer: {
-
     port: process.env.PORT || 8889
   },
   devtool: "inline-source-map",
@@ -27,10 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.html$/,

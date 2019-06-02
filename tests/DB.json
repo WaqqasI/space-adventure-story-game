@@ -1,38 +1,46 @@
 {
-  "value": "Hello",
+  "description": "Hello",
   "options": [
     {
       "value": "heyyo",
+      "description": "banana",
       "options": [
         {
-          "value": "wrong!",
+          "value": "A",
+          "description": "wrong",
           "jump": true
         }
       ]
     },
     {
       "value": "hi",
+      "description": "banana",
       "options": [
         {
-          "value": "wrong",
+          "description": "wrong",
+          "value": "b",
           "jump": true
         }
       ]
     },
     {
       "value": "henlo",
+      "description": "banana",
       "options": [
         {
-          "value": "right!",
+          "description": "right!",
+          "value": "b",
           "finished": true
         }
       ]
     },
     {
       "value": "good morn",
+      "description": "banana",
       "options": [
         {
-          "value": "wrong",
+          "description": "wrong",
+          "value": "b",
           "jump": true
         }
       ]

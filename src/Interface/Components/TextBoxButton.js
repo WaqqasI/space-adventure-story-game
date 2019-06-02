@@ -7,7 +7,9 @@ class TextBoxButton extends Component {
 
   render() {
     return (
-      <button className={"optionButton"} onClick={this.props.onClick}>{this.props.content}</button>
+      <button className={"optionButton"} onClick={this.props.onClick}>
+        {this.props.content}
+      </button>
     );
   }
 }

@@ -1,15 +1,19 @@
 class StoryEngine {
   constructor(originalContext, beforeChoice) {
-    if (!originalContext || !beforeChoice) throw new Error("no context or choice function given");
+    if (!originalContext || !beforeChoice)
+      throw new Error("no context or choice function given");
     this.context = originalContext;
     this.beforeChoice = beforeChoice;
   }
 
   get currentContext() {
-    return {
-      value: this.context.value,
+    const beginningObject = {
+      description: this.context.description,
       options: this.options
     };
+    const isThereAButton = {};
+    if (this.context.value) isThereAButton.value = this.context.value;
+    return Object.assign(beginningObject, isThereAButton);
   }
 
   get options() {
@@ -25,22 +29,27 @@ class StoryEngine {
 
   createOption(i) {
     return () => {
-      this.beforeChoice(this.setContext(i).bind(this), this.context.finished || false);
+      this.beforeChoice(
+        this.context.options[i].onClick ||
+        this.setContext(i, this.context).bind(this),
+        this.context.finished || false
+      );
     };
   }
 
-  setContext(i) {
+  setContext(i, context) {
     return () => {
-      if (this.context.jump) {
-        const previousContext = this.context;
+      if (context.options[i].jump) {
+        const previousContext = context;
         const tempContext = {
-          value: this.context.value,
-          options: [{ value: "OK", onClick: (() => this.context = previousContext).bind(this) }]
+          value: context.value,
+          description: context.options[i].description,
+          options: [
+            { value: "OK", onClick: () => (this.context = previousContext) }
+          ]
         };
         this.context = tempContext;
-      }
-      ;
-      this.context = this.context.options[i];
+      } else this.context = context.options[i];
     };
   }
 }

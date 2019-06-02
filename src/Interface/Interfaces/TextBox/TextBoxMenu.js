@@ -19,7 +19,6 @@ class TextBoxMenu extends Component {
     });
   }
 
-
   render() {
     return (
       <div className={"textBox"}>

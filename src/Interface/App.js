@@ -4,18 +4,18 @@ import TextBoxMenu from "./Interfaces/TextBox/TextBoxMenu";
 
 const InterfaceView = Interface.view;
 class App extends Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-        return (
-            <div>
-              <InterfaceView/>
-              <TextBoxMenu/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <InterfaceView/>
+        <TextBoxMenu/>
+      </div>
+    );
+  }
 }
 
 export default App;

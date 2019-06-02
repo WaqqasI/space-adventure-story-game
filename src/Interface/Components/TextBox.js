@@ -8,9 +8,7 @@ class TextBox extends Component {
     return (
       <div style={{ display: this.props.visible ? "block" : "none" }}>
         <TextBoxDescription content={this.props.description}/>
-        <TextBoxOptions
-          buttons={this.props.options}
-        />
+        <TextBoxOptions buttons={this.props.options}/>
       </div>
     );
   }
