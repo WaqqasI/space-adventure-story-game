@@ -3,6 +3,8 @@ import * as PIXI from "pixi.js";
 import wallDetection from "../Util/Algorithms/wallDetection";
 import enabler from "../Interface/Interfaces/TextBox/enabler";
 import stateManager from "./stateManager";
+import StoryEngine from "../Util/Algorithms/StoryEngine";
+import story from "../story.json";
 
 class GhostPlanet {
   constructor(app, cache) {
@@ -19,19 +21,29 @@ class GhostPlanet {
       this.createGhosts();
     } else this.visualiseGhosts();
 
-    enabler.resolve((state, props) => {
-      return {
-        visible: true,
-        options: [
-          {
-            value: "Okay, get me out now.",
-            onClick: () => {
-              stateManager.changeState(1);
-            }
-          }
-        ]
-      };
-    });
+    enabler.resolve((state, props) => ({ visible: true }));
+    this.runThroughStory();
+  }
+
+  runThroughStory() {
+    this.engine = new StoryEngine(story, this.reducer(this.engine));
+    const cc = this.engine.currentContext;
+    enabler.resolve((state, props) => ({
+      description: cc.description,
+      options: cc.options
+    }));
+  }
+
+  reducer(engine) {
+    return (f, finished) => {
+      f();
+      const cc = this.engine.currentContext;
+      enabler.resolve((state, props) => ({
+        description: cc.description,
+        options: cc.options
+      }));
+      if (finished) stateManager.changeState(1);
+    };
   }
 
   createGhosts() {
@@ -109,9 +121,11 @@ class GhostPlanet {
   }
 
   terminate() {
-    enabler.resolve(() => {
-      return { visible: false };
-    });
+    enabler.resolve(() => ({
+      visible: false,
+      options: [],
+      description: ""
+    }));
     this.terminated = true;
     this.bg.visible = false;
     this.cache.EnterPlanet.textBox.visible = false;

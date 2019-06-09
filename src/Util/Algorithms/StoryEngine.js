@@ -34,7 +34,7 @@ class StoryEngine {
       this.beforeChoice(
         this.context.options[i].onClick ||
           this.setContext(i, this.context).bind(this),
-        this.context.finished || false
+        this.context.options[i].finished || false
       );
     };
   }
@@ -56,4 +56,4 @@ class StoryEngine {
   }
 }
 
-module.exports = StoryEngine;
+export default StoryEngine;

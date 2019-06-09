@@ -1,0 +1,43 @@
+{
+  "description": "Hello",
+  "options": [
+    {
+      "value": "heyyo",
+      "description": "banana",
+      "options": [
+        {
+          "value": "A",
+          "description": "wrong",
+          "jump": true
+        }
+      ]
+    },
+    {
+      "value": "hi",
+      "description": "banana",
+      "jump": true
+    },
+    {
+      "value": "henlo",
+      "description": "banana",
+      "options": [
+        {
+          "description": "right!",
+          "value": "b",
+          "finished": true
+        }
+      ]
+    },
+    {
+      "value": "good morn",
+      "description": "banana",
+      "options": [
+        {
+          "description": "wrong",
+          "value": "b",
+          "jump": true
+        }
+      ]
+    }
+  ]
+}

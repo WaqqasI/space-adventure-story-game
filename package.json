@@ -1,23 +1,23 @@
 {
-  "name": "webpackbabeltesting",
+  "name": "adventure",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "prestart": "webpack --mode production",
     "start": "node server.js",
     "test": "webpack --help",
     "build": "webpack --mode production",
     "server": "webpack-dev-server",
-    "prettify": "./node_modules/.bin/pretty-quick --staged"
+    "test:dev": "wsl nodemon tests/index.js"
   },
   "keywords": [],
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettify"
+      "pre-commit": "pretty-quick --staged"
     }
   },
-  "author": "",
+  "author": "me",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.4.3",
