@@ -1,6 +1,5 @@
-# PIXI.JS Boilerplate with Babel and Webpack.
-
-Transpiles advanced JS code into gibberish that a browser can understand. Then bundles those into a single bundle.js file and appends it to an index.html.
+# Space adventure game
+Main file is in src/index.js
 
 ##Start development server:
 
