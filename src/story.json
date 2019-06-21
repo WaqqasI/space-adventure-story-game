@@ -10,14 +10,16 @@
           "description": "A ghost attacks you, you evade",
           "options": [
             {
-              "value": "Run away"
+              "value": "Run away",
+              "description": "There are too many ghosts, you can't escape fighting a ghost",
+              "jump": true
             },
             {
               "value": "Continue fighting",
-              "description": "The ghosts kills you",
+              "description": "You get possessed and crash",
               "options": [
                 {
-                  "value": "return", 
+                  "value": "Try again", 
                   "finished": true
                 }
               ]
@@ -26,11 +28,44 @@
         },
         {
           "value": "Look for the target",
-          "description": "The ghost happily shows you the target.",
+          "description": "You find an abandoned hut",
           "options": [
             {
-              "value": "return", 
-              "finished": true
+              "value": "continue", 
+              "description": "You look around and see stuff",
+              "options": [
+                {
+                  "value": "continue",
+                  "description": "You see the target being attacked",
+                  "options": [
+                    {
+                      "value": "shoot the ghost",
+                      "description": "The bullet goes through it",
+                      "jump": true
+                    },
+                    {
+                      "value": "shoot the target",
+                      "description": "The target dies and the ghost kills you",
+                      "options": [
+                        {
+                          "value": "Try again", 
+                          "finished": true
+                        }
+                      ]
+                    },
+                    {
+                      "value": "shoot the ghost",
+                      "description": "The bullet goes through it",
+                      "jump": true
+                    },
+                    {
+                      "value": "ignore the ghost",
+                      "description": "Nothing happens",
+                      "jump": true
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -38,3 +73,4 @@
     }
   ]
 }
+
