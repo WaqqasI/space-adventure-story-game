@@ -1,16 +1,3 @@
-# Space adventure game
-Main file is in src/index.js
+# The Space Hunter
 
-##Start development server:
-
-```bash
-npm start
-```
-
-##Build into ./dist
-
-```bash
-npm run build
-```
-
-More TODO
+The main file is located in src/index.js
