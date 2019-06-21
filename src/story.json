@@ -1,41 +1,38 @@
 {
-  "description": "Hello",
+  "description": "You have entered the ghost planet. \n This planet  shows signs of civilisation but all that remains are remnants and ghosts. ",
   "options": [
     {
-      "value": "heyyo",
-      "description": "banana",
+      "value": "Continue?",
+      "description": "You have the power to relieve the ghosts of their misery. \n There is a criminal with a high bounty at the planet.",
       "options": [
         {
-          "value": "A",
-          "description": "wrong",
-          "jump": true
-        }
-      ]
-    },
-    {
-      "value": "hi",
-      "description": "banana",
-      "jump": true
-    },
-    {
-      "value": "henlo",
-      "description": "banana",
-      "options": [
+          "value": "Talk to the ghosts",
+          "description": "A ghost attacks you, you evade",
+          "options": [
+            {
+              "value": "Run away"
+            },
+            {
+              "value": "Continue fighting",
+              "description": "The ghosts kills you",
+              "options": [
+                {
+                  "value": "return", 
+                  "finished": true
+                }
+              ]
+            }
+          ]
+        },
         {
-          "description": "right!",
-          "value": "b",
-          "finished": true
-        }
-      ]
-    },
-    {
-      "value": "good morn",
-      "description": "banana",
-      "options": [
-        {
-          "description": "wrong",
-          "value": "b",
-          "jump": true
+          "value": "Look for the target",
+          "description": "The ghost happily shows you the target.",
+          "options": [
+            {
+              "value": "return", 
+              "finished": true
+            }
+          ]
         }
       ]
     }
