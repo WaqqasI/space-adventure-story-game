@@ -54,9 +54,30 @@
                       ]
                     },
                     {
-                      "value": "shoot the ghost",
-                      "description": "The bullet goes through it",
-                      "jump": true
+                      "value": "talk to the ghost",
+                      "description": "You engage in conversation with the ghost. What do you say?",
+                      "options": [
+                        {
+                          "value": "\"Can I have that guy you have there, please?\"", 
+                          "description": "The ghost happily gives you the target. You win",
+                          "options": [
+                            {
+                              "value": "Return", 
+                              "finished": true
+                            }
+                          ]
+                        },
+                        {
+                          "value": "'u wot m8'",
+                          "description": "the ghost kills you",
+                          "options": [
+                            {
+                              "value": "Try again", 
+                              "finished": true
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
                       "value": "ignore the ghost",
@@ -73,4 +94,3 @@
     }
   ]
 }
-
