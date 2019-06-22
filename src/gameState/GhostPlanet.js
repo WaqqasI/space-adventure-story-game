@@ -1,3 +1,7 @@
+/**
+ * The game state where the story is running and the ghosts appear. IE the ghost planet
+ */
+
 import getTexture from "../Util/Graphics/getTexture";
 import * as PIXI from "pixi.js";
 import wallDetection from "../Util/Algorithms/wallDetection";
@@ -7,6 +11,11 @@ import StoryEngine from "../Util/Algorithms/StoryEngine";
 import story from "../story.json";
 
 class GhostPlanet {
+  /**
+   * Usual state constructor
+   * @param app
+   * @param cache
+   */
   constructor(app, cache) {
     this.app = app;
     this.cache = cache;
@@ -25,6 +34,9 @@ class GhostPlanet {
     this.runThroughStory();
   }
 
+  /**
+   * Goes through the story defined in the database file
+   */
   runThroughStory() {
     this.engine = new StoryEngine(story, this.reducer(this.engine));
     const cc = this.engine.currentContext;
@@ -34,6 +46,11 @@ class GhostPlanet {
     }));
   }
 
+  /**
+   * Allows running through the story to be visible
+   * @param engine a story engine object
+   * @returns {Function} The function that will be used by the story engine every time a button is clicked
+   */
   reducer(engine) {
     return (f, finished) => {
       f();
@@ -46,6 +63,9 @@ class GhostPlanet {
     };
   }
 
+  /**
+   * Literally just makes the ghosts visible
+   */
   createGhosts() {
     this.ghosts = [];
     const ghostText = getTexture("ghost");
@@ -54,12 +74,19 @@ class GhostPlanet {
     }
   }
 
+  /**
+   * self-explanatory
+   */
   visualiseGhosts() {
     for (const i in this.ghosts) {
       this.ghosts[i].visible = true;
     }
   }
 
+  /**
+   * Sets the scale, position and velocity of each ghost to be random
+   * @param {number} i Which ghost to affect
+   */
   setupGhosts(i) {
     this.ghosts[i].scale.set(0.2);
     this.ghosts[i].x = Math.floor(
@@ -99,11 +126,19 @@ class GhostPlanet {
     if (!this.terminated) requestAnimationFrame(this.loop.bind(this));
   }
 
+  /**
+   * moves the ghosts
+   * @param ghost
+   */
   moveGhosts(ghost) {
     ghost.x += ghost.vx;
     ghost.y += ghost.vy;
   }
 
+  /**
+   * Typical wall detection that doesn't really work
+   * @param ghost
+   */
   changeDirection(ghost) {
     const hitWall = wallDetection(
       ghost.x,

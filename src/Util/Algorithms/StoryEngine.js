@@ -1,4 +1,22 @@
+/**
+ * How a story object should look
+ * @typedef {Object} Story
+ * @property {string} [value] This exists if the context is a button
+ * @property {string} description - the description of this scene
+ * @property {boolean} jump - whether to jump back to the previous scene
+ * @property {boolean} finished - whether the story is finished
+ * @property {Story[]} options - More of this object as options
+ */
+
+/**
+ * Class that uses context and a specific Object to give you values to use.
+ */
 class StoryEngine {
+  /**
+   *
+   * @param {Story} originalContext - The original story scene
+   * @param {Function} beforeChoice - Function to execute before changing storyline
+   */
   constructor(originalContext, beforeChoice) {
     if (!originalContext || !beforeChoice)
       throw new Error("no context or choice function given");

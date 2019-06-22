@@ -1,3 +1,7 @@
+/**
+ * Main file for the client side where images are loaded and everything is set up
+ */
+
 import * as PIXI from "pixi.js";
 import preloadResources from "./Util/Graphics/preloadResources.js";
 import spaceshipURL from "./images/spaceship.png";
@@ -5,6 +9,7 @@ import planetsBgURL from "./images/planets.png";
 import textBoxURL from "./images/textbox.png";
 import ghostPlanetURL from "./images/ghostPlanet.png";
 import ghostURL from "./images/ghost.png";
+
 import stateManager from "./gameState/stateManager.js";
 
 const canvasElement = document.getElementById("canvas");

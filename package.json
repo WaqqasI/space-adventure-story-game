@@ -1,6 +1,6 @@
 {
   "name": "adventure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "test": "webpack --help",
     "build": "webpack --mode production",
     "server": "webpack-dev-server",
-    "test:dev": "wsl nodemon tests/index.js"
+    "test:dev": "wsl nodemon tests/index.js",
+    "docs": "jsdoc -r src/**/* server.js -R README.md -P package.json -d Documentation/output -t Documentation/theme"
   },
   "keywords": [],
   "husky": {
@@ -41,7 +42,7 @@
   },
   "devDependencies": {
     "husky": "^2.3.0",
-    "pretty-quick": "^1.11.0",
-    "prettier": "^1.17.0"
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.11.0"
   }
 }

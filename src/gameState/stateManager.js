@@ -1,3 +1,8 @@
+/**
+ * Major file for managing all the game state. Everything gets imported and the state variable can be changed according to the need.
+ * All the other state files in this folder will need to export a class that has a constructor and set, loop and terminate methods
+ */
+
 import PlayState from "./PlayState.js";
 import SettingUserName from "./SettingUserName.js";
 import EnterPlanet from "./EnterPlanet";
@@ -6,7 +11,7 @@ import GhostPlanet from "./GhostPlanet";
 let state, app;
 
 /**
- *
+ * Only executed once before everything to set up default state.
  * @param {Object} application app object from lib
  */
 const setup = application => {
@@ -19,7 +24,11 @@ const setup = application => {
 /**
  * Changes the current game state
  * @param {Number} stateNo 1 is PlayState state
- * @param {Object} extraCache more cache values
+ * @param {Object=} extraCache optionally add more cache values that will be combined
+ * @example
+ *
+ *      changeState(1, {username: 'test'}) // change to game state and add the extra cache of the username.
+ *
  */
 const changeState = (stateNo, extraCache) => {
   let cache = Object.assign(state.terminate(), extraCache || {});

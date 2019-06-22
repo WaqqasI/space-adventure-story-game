@@ -1,3 +1,6 @@
+/**
+ * This is the main game state where the character moves around
+ */
 import getTexture from "../Util/Graphics/getTexture";
 import * as PIXI from "pixi.js";
 import wallDetection from "../Util/Algorithms/wallDetection";
@@ -65,6 +68,10 @@ class PlayState {
     if (!this.terminated) requestAnimationFrame(this.loop.bind(this));
   }
 
+  /**
+   * Everything that happens in the game loop
+   * @param {number} delta
+   */
   game(delta) {
     const spaceship = this.sprites["spaceship"];
     const app = this.app;
@@ -89,12 +96,20 @@ class PlayState {
       stateManager.changeState(2);
   }
 
+  /**
+   *  Loops through instance keyboard keys
+   * @param {Function} execution what to execute on each keyboard key
+   */
   loopThroughKeyboard(execution) {
     for (const value of Object.keys(this.keyboard)) {
       execution(this.keyboard[value]);
     }
   }
 
+  /**
+   * Makes all the sprites invisible and gives sprite cache
+   * @returns {Object|{}|*}
+   */
   terminate() {
     this.terminated = true;
     let sprites = Object.values(this.sprites);

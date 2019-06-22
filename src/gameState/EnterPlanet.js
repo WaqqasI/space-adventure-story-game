@@ -1,3 +1,7 @@
+/**
+ * The state when the text box appears on whether you want to enter the ghost planet
+ */
+
 import getTexture from "../Util/Graphics/getTexture";
 import { Sprite } from "pixi.js";
 import enabler from "../Interface/Interfaces/TextBox/enabler";
@@ -40,14 +44,12 @@ class EnterPlanet {
       return {
         visible: true,
         options: this.options,
-        description:
-          "Do you want to enter the ghost planet? Work in progress so nothing will work exclamation mark"
+        description: "Do you want to enter the ghost planet?"
       };
     });
   }
 
-  loop(delta) {
-  }
+  loop(delta) {}
 
   terminate() {
     enabler.resolve(() => {

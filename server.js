@@ -1,3 +1,7 @@
+/**
+ * Main file where the server runs
+ */
+
 // server.js
 // where your node app starts
 
@@ -10,12 +14,17 @@ const app = express();
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static("dist"));
+app.use(express.static("Documentation/output/adventure/1.0.1"));
 
 // http://expressjs.com/en/starter/basic-routing.html
-/*app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html');
-});*/
-
+app.get("/", function(request, response) {
+  response.sendFile(__dirname + "/dist/index.html");
+});
+app.get("/docs", function(request, response) {
+  response.sendFile(
+    __dirname + "/Documentation/output/adventure/1.0.1/index.html"
+  );
+});
 // listen for requests :)
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
