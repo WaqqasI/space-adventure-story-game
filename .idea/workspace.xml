@@ -7,8 +7,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Documentation/theme/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/theme/package.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/.nvmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/publish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Bold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Bold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-BoldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-BoldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-BoldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Italic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Italic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Italic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Light-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Light-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-LightItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-LightItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-LightItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Semibold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Semibold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Semibold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-Semibold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-SemiboldItalic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-SemiboldItalic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-SemiboldItalic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/fonts/OpenSans-SemiboldItalic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/icons/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/icons/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/scripts/linenumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/scripts/pagelocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/styles/collapse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/styles/jsdoc-default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/styles/prettify-jsdoc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/static/styles/prettify-tomorrow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/augments.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/container.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/details.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/example.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/examples.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/exceptions.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/layout.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/mainpage.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/members.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/method.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/params.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/properties.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/returns.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/source.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/tutorial.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/docTheme/tmpl/type.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/output/adventure/1.0.0/styles/prettify-jsdoc.css" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/output/adventure/1.0.0/styles/prettify-jsdoc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/output/adventure/1.0.0/styles/prettify-tomorrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/output/adventure/1.0.0/styles/prettify-tomorrow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/output/adventure/1.0.1/styles/prettify-jsdoc.css" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/output/adventure/1.0.1/styles/prettify-jsdoc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/output/adventure/1.0.1/styles/prettify-tomorrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/output/adventure/1.0.1/styles/prettify-tomorrow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/theme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,12 +96,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Documentation/theme/README.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Documentation/docTheme/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="-345" />
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -67,7 +138,7 @@
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Documentation/theme" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -147,12 +218,6 @@
               <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventure-game" type="462c0819:PsiDirectoryNode" />
               <item name="Documentation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adventure-game" type="462c0819:PsiDirectoryNode" />
-              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
@@ -386,7 +451,7 @@
       <workItem from="1560018015730" duration="548000" />
       <workItem from="1560087687096" duration="5443000" />
       <workItem from="1560375926765" duration="33000" />
-      <workItem from="1561223612406" duration="4353000" />
+      <workItem from="1561223612406" duration="4698000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state.">
       <created>1557164385777</created>
@@ -448,7 +513,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99899000" />
+    <option name="totallyTimeSpent" value="100244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -461,6 +526,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64983165" visible="true" weight="0.24520256" />
       <window_info id="npm" order="1" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
@@ -821,13 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -838,11 +897,18 @@
     <entry file="file://$PROJECT_DIR$/Documentation/theme/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Documentation/theme/README.md">
+    <entry file="file://$PROJECT_DIR$/Documentation/docTheme/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-345" />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
