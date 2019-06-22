@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afc63b50-3444-4796-804a-e2945ed5bd20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util/Algorithms/StoryEngine.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Util/Algorithms/StoryEngine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameState/EnterPlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/EnterPlanet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameState/GhostPlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/GhostPlanet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameState/PlayState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/PlayState.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameState/SettingUserName.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/SettingUserName.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameState/stateManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameState/stateManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/theme/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/theme/package.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
-              <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Documentation/theme/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-345" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -67,7 +67,7 @@
       </list>
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Documentation/theme" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -118,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/Util/Algorithms/StoryEngine.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/Documentation/theme/package.json" />
       </list>
     </option>
   </component>
@@ -141,6 +142,17 @@
             <path>
               <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="adventure-game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure-game" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adventure-game" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="adventure-game" type="b2602c69:ProjectViewProjectNode" />
@@ -374,7 +386,7 @@
       <workItem from="1560018015730" duration="548000" />
       <workItem from="1560087687096" duration="5443000" />
       <workItem from="1560375926765" duration="33000" />
-      <workItem from="1561223612406" duration="4029000" />
+      <workItem from="1561223612406" duration="4353000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured everything with classes and fixed the play loop with edge detection. setup is now stateEngine which controls game state.">
       <created>1557164385777</created>
@@ -436,7 +448,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99575000" />
+    <option name="totallyTimeSpent" value="99899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +461,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64983165" visible="true" weight="0.24520256" />
       <window_info id="npm" order="1" sideWeight="0.5005988" side_tool="true" weight="0.2496329" />
@@ -820,7 +831,18 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Documentation/theme/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Documentation/theme/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-345" />
+          <second_editor />
         </state>
       </provider>
     </entry>
