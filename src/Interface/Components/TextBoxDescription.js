@@ -1,3 +1,6 @@
+/**
+ * @file The description component for the text box.
+ */
 import React, { Component } from "react";
 
 class TextBoxDescription extends Component {

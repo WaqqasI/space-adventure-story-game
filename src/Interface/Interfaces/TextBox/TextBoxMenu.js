@@ -1,3 +1,7 @@
+/**
+ * @file A menu that is a text box. Mainly used for the story.
+ */
+
 import React, { Component } from "react";
 import "../../../main.css";
 import enabler from "./enabler";

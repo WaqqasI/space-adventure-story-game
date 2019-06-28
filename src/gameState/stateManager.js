@@ -1,5 +1,5 @@
 /**
- * Major file for managing all the game state. Everything gets imported and the state variable can be changed according to the need.
+ * @file Major file for managing all the game state. Everything gets imported and the state variable can be changed according to the need.
  * All the other state files in this folder will need to export a class that has a constructor and set, loop and terminate methods
  */
 

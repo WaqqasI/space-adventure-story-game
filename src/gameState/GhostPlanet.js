@@ -1,5 +1,5 @@
 /**
- * The game state where the story is running and the ghosts appear. IE the ghost planet
+ * @file The game state where the story is running and the ghosts appear. IE the ghost planet
  */
 
 import getTexture from "../Util/Graphics/getTexture";
@@ -98,7 +98,9 @@ class GhostPlanet {
     this.ghosts[i].vx = Math.floor(Math.random() * 5 - Math.random() * 10);
     this.ghosts[i].vy = Math.floor(Math.random() * 5 - Math.random() * 10);
   }
-
+  /**
+   * Resizes and makes all the ghosts visible.
+   */
   setup() {
     const amountToEnlarge = this.app.renderer.width / this.bg.width;
     this.bg.width *= amountToEnlarge;

@@ -1,5 +1,5 @@
 /**
- * The first default state when you're choosing a username. Uses React to render the interface
+ * @file The first default state when you're choosing a username. Uses React to render the interface
  */
 
 import React from "react";

@@ -1,5 +1,5 @@
 /**
- * Main interface ReactJS file that sews all the interfaces together
+ * @file Main interface ReactJS file that sews all the interfaces together
  */
 
 import React, { Component } from "react";

@@ -1,20 +1,15 @@
 /**
- * Main file where the server runs
+ * @file Main file where the server runs by making a http server.
  */
 
-// server.js
-// where your node app starts
 
-// init project
 const express = require("express");
 const app = express();
+const Documentation = "Documentation/output/adventure/1.1.0"
 
-// we've started you off with Express,
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
-// http://expressjs.com/en/starter/static-files.html
 app.use(express.static("dist"));
-app.use(express.static("Documentation/output/adventure/1.0.1"));
+app.use(express.static(Documentation));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
@@ -22,10 +17,10 @@ app.get("/", function(request, response) {
 });
 app.get("/docs", function(request, response) {
   response.sendFile(
-    __dirname + "/Documentation/output/adventure/1.0.1/index.html"
+    __dirname + "/"+Documentation
   );
 });
-// listen for requests :)
+// listen for requests 
 const listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
 });

@@ -1,5 +1,5 @@
 /**
- * Main file for the client side where images are loaded and everything is set up
+ * @file Main file for the client side where images are loaded and everything is set up
  */
 
 import * as PIXI from "pixi.js";

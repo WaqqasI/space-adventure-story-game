@@ -1,3 +1,7 @@
+/**
+ * @file component for the HTML5 form where you can set your username. Uses the css file.
+ */
+
 import React, { Component } from "react";
 import "../../main.css";
 

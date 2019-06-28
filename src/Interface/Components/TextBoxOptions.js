@@ -1,3 +1,7 @@
+/**
+ * @file Component that uses the button component and generates a set of up to 4 buttons for the textbox.
+ */
+
 import React, { Component } from "react";
 import TextBoxButton from "./TextBoxButton";
 
@@ -7,6 +11,13 @@ class TextBoxOptions extends Component {
     this.optionLetters = ["A. ", "B. ", "C. ", "D. "];
   }
 
+  /**
+   * Creates a set of up to four buttons according to the props given by the parent component. 
+   * @implements TextBoxButton
+   * @example
+   *    
+   *    this.createButtons()
+   */
   createButtons() {
     const buttons = [];
     if (!this.props.buttons) throw new Error("No buttons specified");

@@ -1,5 +1,5 @@
 /**
- * This is the main game state where the character moves around
+ * @file This is the main game state where the character moves around
  */
 import getTexture from "../Util/Graphics/getTexture";
 import * as PIXI from "pixi.js";
@@ -99,6 +99,10 @@ class PlayState {
   /**
    *  Loops through instance keyboard keys
    * @param {Function} execution what to execute on each keyboard key
+   * @example 
+   *    
+   *      this.loopThroughKeyboard((value) => value * 2)
+   *      
    */
   loopThroughKeyboard(execution) {
     for (const value of Object.keys(this.keyboard)) {
