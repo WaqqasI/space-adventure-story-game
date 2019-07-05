@@ -1,3 +1,14 @@
+/**
+ * @file Algorithm utility function that works out whther two sprites are hitting
+ */
+
+/**
+ * Checks whether two sprites are hitting
+ * @param {*} r1 Sprite 1
+ * @param {*} r2 sprite 2
+ * @returns {boolean} hit   Whether the sprites are hitting
+ */
+
 function hitTestRectangle(r1, r2) {
   //Define the variables we'll need to calculate
   let hit, combinedHalfWidths, combinedHalfHeights, vx, vy;
