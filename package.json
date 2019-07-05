@@ -4,7 +4,6 @@
   "description": "Travel through space in this story game.",
   "main": "server.js",
   "scripts": {
-    "prestart": "webpack --mode production",
     "start": "node server.js",
     "test": "webpack --help",
     "build": "webpack --mode production",
