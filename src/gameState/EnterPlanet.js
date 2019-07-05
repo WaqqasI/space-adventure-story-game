@@ -51,7 +51,7 @@ class EnterPlanet {
     ];
   }
   /**
-   * @function setup Creates a textbox sprite if it doesn't already exist. 
+   * Creates a textbox sprite if it doesn't already exist. 
    * Also asks if you want to enter.
    */
   setup() {
