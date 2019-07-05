@@ -1,4 +1,8 @@
 /**
+ * @file An algorithm that detects whether you're touching a wall
+ */
+
+/**
  * Detects if sprite is hitting walls.
  * @param {number} x Sprite x coordinate
  * @param {number} y sprite y coordinate

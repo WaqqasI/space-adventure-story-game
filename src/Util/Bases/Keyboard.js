@@ -1,5 +1,5 @@
 /**
- * A keyboard object which can set functions for key presses.
+ * @file A keyboard object which can set functions for key presses.
  */
 class Keyboard {
   /**
@@ -21,7 +21,7 @@ class Keyboard {
 
   /**
    * Handler when the button is down
-   * @param e event
+   * @param {Event} e - A button keypress event
    */
   downHandler(e) {
     if (!this.value.includes(e.key)) return;
@@ -36,7 +36,7 @@ class Keyboard {
 
   /**
    * Handler when button is up
-   * @param e
+   * @param {Event} e - A button keypress event
    */
   upHandler(e) {
     if (!this.value.includes(e.key)) return;

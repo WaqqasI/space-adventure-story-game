@@ -6,6 +6,9 @@ import React, { Component } from "react";
 import Interface from "./Interfaces/Username/SettingAUsername";
 import TextBoxMenu from "./Interfaces/TextBox/TextBoxMenu";
 
+/**
+ * @const {Component} view The HTML in that component
+ */
 const InterfaceView = Interface.view;
 
 class App extends Component {

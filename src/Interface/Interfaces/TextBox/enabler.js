@@ -1,5 +1,15 @@
+/**
+ * @file The enabler which is an event based class I created which uses promises to listen for resolution and makes changes to the TextBoxMenu interface.
+ * This is slightly too complicated for this.
+ */
+
 import SetState from "../../../Util/Bases/SetStateBase";
 
+/**
+ * The enabler class for the Text Box menu
+ * @class TextBoxEnabler
+ * @extends SetState
+ */
 class TextBoxEnabler extends SetState {
   constructor() {
     super();

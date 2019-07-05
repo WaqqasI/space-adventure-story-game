@@ -16,7 +16,9 @@ class TextBoxMenu extends Component {
   componentDidMount() {
     this.listener();
   }
-
+  /**
+   * A recursive function that listens for a function call in another file
+   */
   listener() {
     enabler.listenForResolve(this.listener.bind(this)).then(values => {
       this.setState(values);

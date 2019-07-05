@@ -1,3 +1,7 @@
+/**
+ * @file a utility function that's executed once and preloads the resources before the game
+ */
+
 import * as PIXI from "pixi.js";
 
 /**

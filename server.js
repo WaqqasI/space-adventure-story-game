@@ -5,7 +5,7 @@
 
 const express = require("express");
 const app = express();
-const Documentation = "Documentation/output/adventure/1.1.0"
+const Documentation = "Documentation/output/adventure/1.1.3"
 
 
 app.use(express.static("dist"));

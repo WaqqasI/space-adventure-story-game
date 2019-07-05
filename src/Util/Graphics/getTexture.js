@@ -1,3 +1,7 @@
+/**
+ * @file utility function that gets textures
+ */
+
 import * as PIXI from "pixi.js";
 
 /**

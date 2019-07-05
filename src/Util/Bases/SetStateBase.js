@@ -1,4 +1,8 @@
 /**
+ * @file a class base for interface enablers
+ */
+
+/**
  * @callback stateCallback
  * @param {*} state Current state
  * @param {*} props Current props

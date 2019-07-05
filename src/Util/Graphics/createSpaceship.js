@@ -1,9 +1,13 @@
+/**
+ * @file a utility function that creates a spaceship sprite in a container with it's name
+ */
+
 import * as PIXI from "pixi.js";
 import getTexture from "./getTexture";
 
 /**
  * Creates a spaceship with a name
- * @param name
+ * @param {string} name - username
  * @returns {PIXI.Container} spaceship a spaceship with the name
  */
 const createSpaceship = name => {
