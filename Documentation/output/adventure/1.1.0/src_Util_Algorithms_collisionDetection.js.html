@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-      src/Interface/Interfaces/TextBox/enabler.js - Documentation
+      src/Util/Algorithms/collisionDetection.js - Documentation
   </title>
 
   <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
@@ -82,7 +82,7 @@ Also asks if you want to enter.</a></li><li><a href="global.html#sprite">sprite<
   <div id="main">
     
       <h1 class="page-title">
-        src/Interface/Interfaces/TextBox/enabler.js
+        src/Util/Algorithms/collisionDetection.js
       </h1>
     
 
@@ -91,46 +91,64 @@ Also asks if you want to enter.</a></li><li><a href="global.html#sprite">sprite<
 
 <section>
   <article>
-    <pre class="prettyprint source linenums"><code>import SetState from "../../../Util/Bases/SetStateBase";
+    <pre class="prettyprint source linenums"><code>/**
+ * @file Algorithm utility function that works out whther two sprites are hitting
+ */
 
-class TextBoxEnabler extends SetState {
-  constructor() {
-    super();
+/**
+ * Checks whether two sprites are hitting
+ * @param {*} r1 Sprite 1
+ * @param {*} r2 sprite 2
+ * @returns {boolean} hit   Whether the sprites are hitting
+ */
+
+function hitTestRectangle(r1, r2) {
+  //Define the variables we'll need to calculate
+  let hit, combinedHalfWidths, combinedHalfHeights, vx, vy;
+
+  //hit will determine whether there's a collision
+  hit = false;
+
+  //Find the center points of each sprite
+  r1.centerX = r1.x + r1.width / 2;
+  r1.centerY = r1.y + r1.height / 2;
+  r2.centerX = r2.x + r2.width / 2;
+  r2.centerY = r2.y + r2.height / 2;
+
+  //Find the half-widths and half-heights of each sprite
+  r1.halfWidth = r1.width / 2;
+  r1.halfHeight = r1.height / 2;
+  r2.halfWidth = r2.width / 2;
+  r2.halfHeight = r2.height / 2;
+
+  //Calculate the distance vector between the sprites
+  vx = r1.centerX - r2.centerX;
+  vy = r1.centerY - r2.centerY;
+
+  //Figure out the combined half-widths and half-heights
+  combinedHalfWidths = r1.halfWidth + r2.halfWidth;
+  combinedHalfHeights = r1.halfHeight + r2.halfHeight;
+
+  //Check for a collision on the x axis
+  if (Math.abs(vx) &lt; combinedHalfWidths) {
+    //A collision might be occurring. Check for a collision on the y axis
+    if (Math.abs(vy) &lt; combinedHalfHeights) {
+      //There's definitely a collision happening
+      hit = true;
+    } else {
+      //There's no collision on the y axis
+      hit = false;
+    }
+  } else {
+    //There's no collision on the x axis
+    hit = false;
   }
 
-  /**
-   * Creates a promise that can be returned with .then
-   * @returns {Promise&lt;any>}
-   * @example 
-   *      
-   *          enabler.listenForResolve(this.listener.bind(this)).then(values => {
-   *            this.setState(values);
-   *          });
-   */
-  listenForResolve(recursive) {
-    this.recursive = recursive;
-    return this.createPromise();
-  }
-
-  /**
-   * Resolves the most recent created promise from listenForResolve
-   * @param {stateCallback} state   A state function to set interface state
-   */
-  resolve(state) {
-    this.resolver(state);
-    this.recursive();
-  }
-
-  /**
-   * Rejects the promise
-   * @param {string}  ERROR Error message
-   */
-  reject(ERROR) {
-    this.rejecter(ERROR);
-  }
+  //`hit` will be either `true` or `false`
+  return hit;
 }
 
-export default new TextBoxEnabler();
+export default hitTestRectangle;
 </code></pre>
   </article>
 </section>
